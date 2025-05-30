@@ -113,7 +113,7 @@ def predict_video(video_path):
         
             # 设置输出视频文件
             output_path = "predict_video.mp4"
-            fourcc = cv2.VideoWriter_fourcc(*'X264')
+            fourcc = cv2.VideoWriter_fourcc(*'avc1')
             out = cv2.VideoWriter(output_path, fourcc, fps, (frame_width, frame_height))
         
             frame_rate_divider = 1  # 每1帧进行一次检测
